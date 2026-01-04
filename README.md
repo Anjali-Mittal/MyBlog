@@ -1,0 +1,121 @@
+# 📝 Blogging Website
+
+A full-stack blogging platform built using **Node.js, Express, MongoDB, and EJS**.  
+The application focuses on secure authentication, user-owned content, and clean backend architecture.
+
+---
+
+## ✨ What this project does
+
+- 👤 Allows users to create an account and authenticate securely  
+- 🔒 Ensures only signed-in users can create blogs  
+- 🧾 Restricts delete actions to content owners and admins
+- 🗄️ Stores all data using structured MongoDB schemas  
+
+---
+
+## 🚀 Core Features
+
+### 🔐 Authentication & Access Control
+- Password hashing with salt  
+- JWT-based authentication  
+- Login and logout functionality  
+- Middleware-protected routes  
+- Unauthorized users cannot create blogs or comments  
+
+---
+
+### ✍️ Blogs
+- Create blog posts with title and content and cover image
+- Delete blogs **only if you are the creator or the admin**  
+- Ownership checks enforced on the server  
+
+---
+
+### 💬 Comments
+- Add comments on blog posts  
+- Comments are linked to authenticated users  
+- Anonymous commenting is restricted  
+
+---
+
+### 👤 User Management
+- Users can delete their own account  
+- Sessions are invalidated on logout  
+
+---
+
+## 🛠️ Tech Stack
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (Mongoose)  
+- **Authentication:** JWT  
+- **Templating:** EJS  
+
+---
+
+## 📁 Project Structure
+```
+controllers/
+middlewares/
+models/
+routes/
+services/
+views/
+public/
+app.js
+package.json
+package-lock.json
+.env
+.gitignore
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone <repository-url>
+cd BLOG
+```
+
+### 2️⃣ Install dependencies
+```bash
+Copy code
+npm install
+```
+
+### 3️⃣ Configure environment variables
+```bash
+Create a .env file in the root directory:
+PORT=your_port
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+4️⃣ Start the server
+```bash
+npm start
+Open in browser:
+http://localhost:PORT
+```
+
+
+## 🔍 How access is enforced
+- 🚫 Blogs cannot be created without authentication
+- 🛑 Users cannot delete blogs they do not own
+- 🧠 Middleware validates JWT on protected routes
+- 🔐 Passwords are never stored in plain text
+
+## 🔮 Possible Improvements
+- Edit blog functionality
+- Pagination for blog lists
+- Search optimization
+- Admin moderation tools
+
+## 🧾 License
+
+### MIT License © 2025 Anjali Mittal  
+-----
+
+Made with ❤️ by [Anjali Mittal](https://github.com/Anjali-Mittal)
