@@ -60,7 +60,7 @@ router.post('/',upload.single('coverImage'),async (req,res)=>{
     try {
         const {title,body} = req.body;
         if (!title || !body) {
-            return res.status(400).render('addBlog', {
+            return res.status(400).render('addblog', {
                 user: req.user,
                 error: 'Title and body are required'
             });
@@ -74,7 +74,7 @@ router.post('/',upload.single('coverImage'),async (req,res)=>{
         return res.redirect(`/blog/${blog._id}`);
     } catch (err) {
         console.error('Error creating blog:', err.message);
-        return res.status(500).render('addBlog', {
+        return res.status(500).render('addblog', {
             user: req.user,
             error: 'Error creating blog'
         });
