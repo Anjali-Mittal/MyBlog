@@ -1,6 +1,6 @@
-# 📝 Blogging Website
+# 📝 MyBlog
 
-A full-stack blogging platform built using **Node.js, Express, MongoDB, and EJS**.  
+MyBlog is a full-stack blogging platform built using **Node.js, Express, MongoDB, and EJS**.  
 The application focuses on secure authentication, user-owned content, and clean backend architecture.
 
 ---
