@@ -1,7 +1,14 @@
-# 📝 MyBlog
+# 📝 [MyBlog](https://myblog-production-f5c3.up.railway.app/)
 
 MyBlog is a full-stack blogging platform built using **Node.js, Express, MongoDB, and EJS**.  
 The application focuses on secure authentication, user-owned content, and clean backend architecture.
+
+---
+
+### 🚀 Live Demo
+
+The application is deployed and publicly
+[ClickMe](https://myblog-production-f5c3.up.railway.app/) to view the live demo 
 
 ---
 
