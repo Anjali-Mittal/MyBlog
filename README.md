@@ -100,12 +100,78 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
-4️⃣ Start the server
+### 4️⃣ Start the server
 ```bash
 npm start
 Open in browser:
 http://localhost:PORT
 ```
+
+## 🔗 API Endpoints
+
+---
+
+### 🔐 Authentication
+
+- Authentication is handled using JWT stored in cookies, with middleware-based user resolution.
+
+```bash
+POST /user/signup
+```
+Register a new user
+
+```bash
+POST /user/signin
+```
+Authenticate user and create session
+
+```bash
+GET /user/logout
+```
+Logout the current user
+
+---
+
+### 📝 Blogs
+```bash
+GET /
+```
+Fetch and display all blogs (homepage)
+
+```bash
+GET /blog/add-new
+```
+Render add blog form (authenticated users only)
+
+```bash
+GET /blog/:id
+```
+Fetch a specific blog along with its comments
+
+```bash
+POST /blog
+```
+Create a new blog with optional cover image upload
+
+```bash
+DELETE /blog/:id
+```
+Delete a blog (author or admin only)
+
+---
+
+### 💬 Comments
+```bash
+POST /blog/comment/:id
+```
+Add a comment to a specific blog
+
+```bash
+DELETE /blog/comment/:commentId
+```
+Delete a comment (comment author, blog owner, or admin only)
+
+-----
 
 
 ## 🔍 How access is enforced
@@ -116,7 +182,9 @@ http://localhost:PORT
 
 ## 🔮 Possible Improvements
 - Edit blog functionality
-- Pagination for blog lists
+- Upvote and Downvote
+- View Blogs By Various Filters
+- User Profiles
 - Search optimization
 - Admin moderation tools
 
