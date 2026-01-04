@@ -17,6 +17,9 @@ app.use(cookieParser());
 app.use(checkforAuthenticationCookie('token'));
 app.use(express.static(path.resolve("./public")));
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
 
 app.get('/', async (req,res)=>{
     try {
