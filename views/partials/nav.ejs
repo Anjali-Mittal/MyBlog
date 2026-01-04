@@ -19,7 +19,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/user/logout">LogOut</a></li>
-            <li><a class="dropdown-item" href="#" onclick="deleteAccount('<%= user._id %>')">Delete Account</a></li>
+            <li><a class="dropdown-item" href="#" onclick="deleteAccount('<%= locals.user._id %>')">Delete Account</a></li>
           </ul>
         </li>
         <% }else{ %>
