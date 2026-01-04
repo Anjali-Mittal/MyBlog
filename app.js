@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 const path = require('path');
 const Blog = require('./models/blog');
 const userRoute = require('./routes/user');
