@@ -7,8 +7,8 @@ The application focuses on secure authentication, user-owned content, and clean 
 
 ### 🚀 Live Demo
 
-The application is deployed and publicly
-[ClickMe](https://myblog-production-f5c3.up.railway.app/) to view the live demo 
+- The application is deployed
+- [ClickMe](https://myblog-production-f5c3.up.railway.app/) to view the live demo 
 
 ---
 
